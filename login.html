@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="myDiv">
+    <div style="color: #000000; padding-top:150px; text-align: center;">
+      <form name="myForm" action="/api/WebEmpAuth/AD_Login_Form" method="post">
+        <span style="display:block">
+          UserName:<input type="text" name="UserName" id="iUserName" style="width:150px" required />
+        </span><br />
+        <span style="display:block">
+          UserPIN:<input type="password" name="UserPIN" id="iUserPIN" style="width:150px" autocomplete="off" required />
+        </span><br />
+        <br />
+        <input type="button" id="iSubmit" value="submit" />
+      </form>
+      <div id="iInfoMessage" style="margin-top: 20px;"></div>
+      <div id="iErrorMessage" style="margin-top: 20px; color: red;"></div>
+    </div>
+  </div>
+  <script src="./login.js" charset="UTF-8"></script>
+</body>
+
+</html>
